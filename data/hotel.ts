@@ -1,22 +1,22 @@
 export const hotel = {
-  id: "plat-house-kagurazaka",
+  id: "plat-house-kagurazaka2",
   name: {
-    ja: "ぷらっとハウス神楽坂",
-    en: "Plat House Kagurazaka",
+    ja: "ぷらっとハウス神楽坂Ⅱ",
+    en: "Plat House Kagurazaka II",
   },
   catchcopy: {
-    ja: "神楽坂駅1分。80㎡の1LDKで最大10名。下町情緒あふれる神楽坂を、贅沢な空間で楽しむ",
-    en: "1 min from Kagurazaka Station. Spacious 80㎡ 1LDK for up to 10 guests in charming Kagurazaka.",
+    ja: "牛込神楽坂駅3分。80㎡の3LDK戸建てで最大10名。3つの客室とリビングで、グループ旅行を贅沢に",
+    en: "3 min from Ushigome-Kagurazaka Station. Spacious 80㎡ 3LDK house for up to 10 guests in charming Kagurazaka.",
   },
   address: {
-    postalCode: "162-0065",
-    ja: "東京都新宿区矢来町１０８",
-    en: "108 Yaraicho, Shinjuku-ku, Tokyo 162-0065",
+    postalCode: "162-0805",
+    ja: "東京都新宿区矢来町８３－２",
+    en: "83-2 Yaraicho, Shinjuku-ku, Tokyo 162-0805",
   },
   area: "神楽坂",
   phone: "08070583086",
   category: "民泊",
-  website: "https://kagurazaka.plat-house.jp",
+  website: "https://kagurazaka2.plat-house.jp",
   checkIn: "16:00",
   checkOut: "11:00",
   price: {
@@ -27,18 +27,19 @@ export const hotel = {
   cancelPolicy: "7日前まで無料キャンセル可能",
   languages: ["ja", "en"],
   googleMapUrl: "",
-  bookingUrl: "https://beds24.com/booking.php?propid=240670&referer=BookingLink",
+  bookingUrl: "https://beds24.com/booking.php?propid=325166&referer=BookingLink",
   rating: {
     google: 0,
     bookingCom: 0,
   },
   access: [
-    { station: "神楽坂駅", line: "東京メトロ東西線", walk: 1 },
+    { station: "牛込神楽坂駅", line: "都営大江戸線", walk: 3 },
+    { station: "神楽坂駅", line: "東京メトロ東西線", walk: 4 },
   ],
   floors: "戸建て",
   parking: 0,
   capacity: 10,
-  size: "80㎡（1LDK）",
+  size: "80㎡（3LDK）",
 };
 
 export const amenities = [
@@ -70,12 +71,48 @@ export const rooms = [
   {
     id: "room-a",
     floor: "",
-    name: { ja: "ぷらっとハウス神楽坂（1LDK・80㎡）", en: "Plat House Kagurazaka (1LDK · 80㎡)" },
-    bedType: { ja: "ダブルベッド×2・ダブル布団セット×2・ダブルソファーベッド×2", en: "2 Double Beds + 2 Double Futon Sets + 2 Double Sofa Beds" },
-    maxGuests: 10,
+    name: { ja: "客室A", en: "Room A" },
+    bedType: { ja: "ダブルベッド×2", en: "2 Double Beds" },
+    maxGuests: 4,
     description: {
-      ja: "80㎡の広々とした1LDK。ダブルベッド2台・ダブル布団セット2組・ダブルソファーベッド2台で最大10名様が快適にお過ごしいただけます。リビング・キッチン・浴槽完備。",
-      en: "A spacious 80㎡ 1LDK with 2 double beds, 2 double futon sets, and 2 double sofa beds. Living room, kitchen, and bathtub included. Up to 10 guests.",
+      ja: "ダブルベッド2台を備えた広い客室。最大4名様でご利用いただけます。",
+      en: "Room A with 2 double beds. Accommodates up to 4 guests.",
+    },
+    images: [],
+  },
+  {
+    id: "room-b",
+    floor: "",
+    name: { ja: "客室B", en: "Room B" },
+    bedType: { ja: "ダブルベッド×1", en: "1 Double Bed" },
+    maxGuests: 2,
+    description: {
+      ja: "ダブルベッド1台の落ち着いた客室。最大2名様でご利用いただけます。",
+      en: "Room B with 1 double bed. Accommodates up to 2 guests.",
+    },
+    images: [],
+  },
+  {
+    id: "room-c",
+    floor: "",
+    name: { ja: "客室C", en: "Room C" },
+    bedType: { ja: "ダブルベッド×1", en: "1 Double Bed" },
+    maxGuests: 2,
+    description: {
+      ja: "ダブルベッド1台の落ち着いた客室。最大2名様でご利用いただけます。",
+      en: "Room C with 1 double bed. Accommodates up to 2 guests.",
+    },
+    images: [],
+  },
+  {
+    id: "room-living",
+    floor: "",
+    name: { ja: "リビング", en: "Living Room" },
+    bedType: { ja: "シングル布団×2", en: "2 Single Futons" },
+    maxGuests: 2,
+    description: {
+      ja: "広々としたリビングスペース。シングル布団2組で最大2名様がご利用いただけます。",
+      en: "Spacious living area with 2 single futons. Accommodates up to 2 guests.",
     },
     images: [],
   },
@@ -88,15 +125,15 @@ export const faqs = [
   },
   {
     q: { ja: "何名まで宿泊できますか？", en: "How many guests can stay?" },
-    a: { ja: "最大10名様までご宿泊いただけます。ダブルベッド2台・布団2組・ソファーベッド2台をご用意しています。大人数のグループ・ファミリー旅行に最適です。", en: "Up to 10 guests. We provide 2 double beds, 2 futon sets, and 2 sofa beds. Perfect for large groups and family trips." },
+    a: { ja: "最大10名様までご宿泊いただけます。客室A（ダブル×2・最大4名）・客室B（ダブル×1・最大2名）・客室C（ダブル×1・最大2名）・リビング（シングル布団×2・最大2名）をご用意しています。", en: "Up to 10 guests. Room A (2 double beds, max 4), Room B (1 double bed, max 2), Room C (1 double bed, max 2), Living room (2 single futons, max 2)." },
   },
   {
-    q: { ja: "神楽坂駅からどのくらいですか？", en: "How far from Kagurazaka Station?" },
-    a: { ja: "神楽坂駅（東京メトロ東西線）から徒歩1分です。神楽坂の飲食店・観光スポットへすぐアクセスできます。", en: "Just 1 minute walk from Kagurazaka Station (Tokyo Metro Tozai Line). Immediate access to Kagurazaka's restaurants and sightseeing spots." },
+    q: { ja: "最寄り駅はどこですか？", en: "What is the nearest station?" },
+    a: { ja: "牛込神楽坂駅（都営大江戸線）徒歩3分、神楽坂駅（東京メトロ東西線）徒歩4分です。2路線利用可能で非常に便利です。", en: "3 min walk from Ushigome-Kagurazaka Station (Toei Oedo Line), 4 min from Kagurazaka Station (Tokyo Metro Tozai Line)." },
   },
   {
     q: { ja: "キッチンは使えますか？", en: "Is the kitchen available?" },
-    a: { ja: "はい、調理器具・食器完備のキッチンをご利用いただけます。大人数での自炊も楽しんでいただけます。", en: "Yes, a fully equipped kitchen with cookware and tableware is available. Great for group cooking." },
+    a: { ja: "はい、調理器具・食器完備のキッチンをご利用いただけます。大人数での自炊も楽しんでいただけます。", en: "Yes, a fully equipped kitchen with cookware and tableware is available." },
   },
   {
     q: { ja: "駐車場はありますか？", en: "Is there parking?" },
