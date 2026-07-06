@@ -9,25 +9,25 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "ぷらっとハウス中目黒 | 中目黒駅・池尻大橋駅 徒歩10分 20㎡ 2客室 民泊",
+  title: "クリエイトスペース東新宿 新宿歌舞伎町Ⅱ | 東新宿駅5分 38㎡ 最大5名 民泊",
   description:
-    "中目黒駅・池尻大橋駅 徒歩10分。20㎡の洗練された2客室（各クイーンベッド1台・最大2名）。Netflix・キッチン・浴槽・ボタニスト完備。おしゃれな中目黒エリアで快適ステイ。",
+    "東新宿駅（東京メトロ副都心線・都営大江戸線）徒歩5分。38㎡の広々2客室（各最大5名）。Netflix・キッチン・浴槽・ソファーベッド完備。新宿・歌舞伎町へのアクセス抜群。",
   keywords:
-    "ぷらっとハウス中目黒, 中目黒 民泊, 池尻大橋 民泊, 中目黒 宿泊, 目黒 カップル宿泊, Nakameguro accommodation, Tokyo couple stay",
+    "クリエイトスペース東新宿, 新宿歌舞伎町 民泊, 東新宿 民泊, 東新宿駅 宿泊, 新宿 グループ宿泊, Higashi-Shinjuku accommodation, Tokyo group stay",
   openGraph: {
-    title: "ぷらっとハウス中目黒 | 中目黒駅10分 20㎡ 2名 民泊",
+    title: "クリエイトスペース東新宿 新宿歌舞伎町Ⅱ | 東新宿駅5分 38㎡ 最大5名",
     description:
-      "中目黒駅・池尻大橋駅10分。20㎡クイーンベッド客室・Netflix・キッチン・浴槽完備。",
-    url: "https://nakameguro.plat-house.jp",
-    siteName: "Plat House Nakameguro",
+      "東新宿駅5分。38㎡の2客室・各最大5名。Netflix・キッチン・浴槽・ソファーベッド完備。",
+    url: "https://higashishinjuku.create-space.jp",
+    siteName: "Create Space Higashi-Shinjuku",
     locale: "ja_JP",
     type: "website",
   },
   alternates: {
-    canonical: "https://nakameguro.plat-house.jp",
+    canonical: "https://higashishinjuku.create-space.jp",
     languages: {
-      "ja": "https://nakameguro.plat-house.jp",
-      "en": "https://nakameguro.plat-house.jp/en",
+      "ja": "https://higashishinjuku.create-space.jp",
+      "en": "https://higashishinjuku.create-space.jp/en",
     },
   },
 };
@@ -43,20 +43,20 @@ export default function RootLayout({
         <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LodgingBusiness",
-          "name": "ぷらっとハウス中目黒",
-          "url": "https://nakameguro.plat-house.jp",
+          "name": "クリエイトスペース東新宿 新宿歌舞伎町Ⅱ",
+          "url": "https://higashishinjuku.create-space.jp",
           "telephone": "08070583086",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "東山2−9−20",
-            "addressLocality": "目黒区",
+            "streetAddress": "新宿７－１１－１１",
+            "addressLocality": "新宿区",
             "addressRegion": "東京都",
-            "postalCode": "153-0043",
+            "postalCode": "160-0022",
             "addressCountry": "JP"
           },
           "checkinTime": "16:00",
           "checkoutTime": "11:00",
-          "priceRange": "¥12,000〜¥25,000",
+          "priceRange": "¥15,000〜¥35,000",
           "amenityFeature": [
             { "@type": "LocationFeatureSpecification", "name": "Netflix", "value": true },
             { "@type": "LocationFeatureSpecification", "name": "Nintendo Switch", "value": true },
