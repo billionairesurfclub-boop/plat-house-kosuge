@@ -9,6 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "gXHCgYW1liWYzDHLdMnZqsms3IllJliPGWeecgZRK5E",
+  },
   title: "ぷらっとハウス小菅 | 小菅駅徒歩7分 35㎡1LDK 最大4名 民泊",
   description:
     "小菅駅（東京メトロ千代田線）徒歩7分。35㎡の1LDK一棟貸切・最大4名。Netflix・Nintendo Switch・キッチン完備。足立・小菅エリアのグループ旅行に最適。",
